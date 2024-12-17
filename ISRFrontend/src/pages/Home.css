@@ -1,0 +1,67 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: url('../bg.jpeg') center center no-repeat;
+  background-size: cover;
+  position: relative; /* Needed for absolute positioning of the overlay */
+}
+
+.home::before {
+  content: ''; /* This is necessary for the pseudo-element to work */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* White with 50% opacity */
+  z-index: 0; /* Ensures it doesn't overlay content */
+}
+
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+  position: relative; /* Bring the header on top of the overlay */
+  z-index: 1;
+}
+
+.home__header a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+
+.home__header a:hover {
+  text-decoration: underline;
+}
+
+.home__headerRight {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+  position: relative; /* Ensure elements are on top of the overlay */
+  z-index: 1;
+}
+
+.home__headerRight > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.home__body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Ensure body content is on top of the overlay */
+  z-index: 1;
+}
+
+.home__body > img {
+  object-fit: contain;
+  height: 20rem;
+}

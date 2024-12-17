@@ -1,0 +1,199 @@
+:root {
+  --base-font-size: 16px;
+  --primary-color: #4f4a3f; /* Cute pink color */
+  --secondary-color: #737466; /* Cute green color */
+  --text-color: #555;
+  --accent-color: #0000FF; /* Blue color */
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --background-color: #e7e5d6;
+  --border-left-color: #f0f0f0;
+  --block-color: #e7e5d6;
+}
+
+html {
+  font-size: var(--base-font-size); /* Set the base font size */
+}
+
+body {
+  /* position: relative; /* Set position to relative for absolute positioning of pseudo-element */
+  /* background-image: url('../bg_opacity.jpeg');
+  background-size: cover; */
+  background-color:#4f4a3f ;
+}
+
+.restaurant-container {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: calc(100vh - 6rem); /* Set height to fill the viewport minus top and bottom margins */
+  overflow-y: auto;
+}
+
+.restaurant-wrapper {
+  width: 70%;
+  top: 10%; /* Place summary container below the restaurant container */
+  left: 2%;
+  right: 45%;
+  bottom: 50%; /* Fill remaining 50% of the container height */
+  padding: 0 1rem;
+  overflow-y: auto;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.restaurant {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  margin-bottom: 1.5rem;
+  background-color: var(--background-color);
+  font-family: "Arial", sans-serif;
+  position: relative;
+  flex: 1;
+}
+
+.restaurant-details {
+  padding: 1.5rem;
+}
+
+.restaurant-details h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary-color); /* Cute pink color */
+}
+
+.category {
+  font-size: 1.25rem;
+  color: var(--secondary-color); /* Cute green color */
+}
+
+.headings {
+  font-size: 2rem;
+  color: var(--secondary-color); /* Cute green color */
+  margin-bottom: 0.75rem;
+}
+
+.headings-bottom {
+  font-size: 1.5rem;
+  padding-left: 1.25rem;
+  color: var(--secondary-color); /* Cute green color */
+  margin-bottom: 0.75rem;
+}
+
+.headings-now {
+  font-size: 1.5rem;
+  padding-left: 1.25rem;
+  color: #e7e5d6; /* Cute green color */
+  margin-bottom: 0.75rem;
+  font-weight: bold; /* Make the text bold */
+}
+
+.description {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.restaurant ::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: var(
+    --block-color
+  ); /* Block color at the bottom of the card */
+}
+
+.summary-container {
+  position: absolute; /* Position summary container absolute */
+  top: 73%; /* Place summary container below the restaurant container */
+  left: 1%;
+  right: 43.5%;
+  bottom: 10%; /* Fill remaining 50% of the container height */
+  padding: 0 1rem; /* Add padding for spacing and styling */
+  background-color: #e7e5d6; /* Add background color for the summary container */
+  border-radius: 0.5rem; /* Add border radius for rounded corners */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #4f4a3f; 
+  overflow-y: auto;
+}
+
+.recommendations {
+  width: 50%;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  /* margin-right: 1rem; */
+  overflow-y: auto;
+}
+
+.recommendation-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation-item {
+  padding: 0 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  background-color: var(--background-color);
+  font-family: "Arial", sans-serif;
+}
+
+.recommendation-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color); /* Cute pink color */
+}
+
+.recommendation-item .category {
+  font-size: 1rem;
+  color: var(--secondary-color); /* Cute green color */
+}
+
+.address {
+  margin-top: 0.25rem;
+  color: var(--text-color);
+}
+
+.rating {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.price {
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+.hours {
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+.misc {
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.summary {
+  padding: 5px;
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+
+.recommendation-item .recommendation-url {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--accent-color); /* Blue color */
+  text-decoration: none;
+}

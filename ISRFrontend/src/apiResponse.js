@@ -1,0 +1,108 @@
+export default {
+  searchInformation: {
+    searchTime: 0.59,
+    totalResults: "280,000,000",
+  },
+  items: [
+    {
+      name: "Walgreens Pharmacy",
+      address: "Walgreens Pharmacy, 124 E North St, Kendallville, IN 46755",
+      gmap_id: "0x881614ce7c13acbb:0x5c7b18bbf6ec4f7e",
+      description:
+        "Department of the Walgreens chain providing prescription medications & other health-related items.",
+      latitude: 41.451859999999996,
+      longitude: -85.2666757,
+      category: ["Pharmacy"],
+      avg_rating: 4.2,
+      num_of_reviews: 5,
+      price: "$$",
+      hours: [
+        ["Thursday", "8AM–1:30PM"],
+        ["Friday", "8AM–1:30PM"],
+        ["Saturday", "9AM–1:30PM"],
+        ["Sunday", "10AM–1:30PM"],
+        ["Monday", "8AM–1:30PM"],
+        ["Tuesday", "8AM–1:30PM"],
+        ["Wednesday", "8AM–1:30PM"],
+      ],
+      MISC: {
+        "Service options": [
+          "Curbside pickup",
+          "Drive-through",
+          "In-store pickup",
+          "In-store shopping",
+        ],
+        "Health & safety": [
+          "Mask required",
+          "Staff wear masks",
+          "Staff get temperature checks",
+        ],
+        Accessibility: [
+          "Wheelchair accessible entrance",
+          "Wheelchair accessible parking lot",
+        ],
+        Planning: ["Quick visit"],
+        Payments: ["Checks", "Debit cards"],
+      },
+      state: "Closes soon ⋅ 1:30PM ⋅ Reopens 2PM",
+      relative_results: [
+        "0x881614cd49e4fa33:0x2d507c24ff4f1c74",
+        "0x8816145bf5141c89:0x535c1d605109f94b",
+        "0x881614cda24cc591:0xca426e3a9b826432",
+        "0x88162894d98b91ef:0xd139b34de70d3e03",
+        "0x881615400b5e57f9:0xc56d17dbe420a67f",
+      ],
+      url: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x881614ce7c13acbb:0x5c7b18bbf6ec4f7e?authuser=-1&hl=en&gl=us",
+    },
+    {
+      name: "Walgreens Pharmacy",
+      address: "Walgreens Pharmacy, 124 E North St, Kendallville, IN 46755",
+      gmap_id: "0x881614ce7c13acbb:0x5c7b18bbf6ec4f7e",
+      description:
+        "Department of the Walgreens chain providing prescription medications & other health-related items.",
+      latitude: 41.451859999999996,
+      longitude: -85.2666757,
+      category: ["Pharmacy"],
+      avg_rating: 4.2,
+      num_of_reviews: 5,
+      price: "$$",
+      hours: [
+        ["Thursday", "8AM–1:30PM"],
+        ["Friday", "8AM–1:30PM"],
+        ["Saturday", "9AM–1:30PM"],
+        ["Sunday", "10AM–1:30PM"],
+        ["Monday", "8AM–1:30PM"],
+        ["Tuesday", "8AM–1:30PM"],
+        ["Wednesday", "8AM–1:30PM"],
+      ],
+      MISC: {
+        "Service options": [
+          "Curbside pickup",
+          "Drive-through",
+          "In-store pickup",
+          "In-store shopping",
+        ],
+        "Health & safety": [
+          "Mask required",
+          "Staff wear masks",
+          "Staff get temperature checks",
+        ],
+        Accessibility: [
+          "Wheelchair accessible entrance",
+          "Wheelchair accessible parking lot",
+        ],
+        Planning: ["Quick visit"],
+        Payments: ["Checks", "Debit cards"],
+      },
+      state: "Closes soon ⋅ 1:30PM ⋅ Reopens 2PM",
+      relative_results: [
+        "0x881614cd49e4fa33:0x2d507c24ff4f1c74",
+        "0x8816145bf5141c89:0x535c1d605109f94b",
+        "0x881614cda24cc591:0xca426e3a9b826432",
+        "0x88162894d98b91ef:0xd139b34de70d3e03",
+        "0x881615400b5e57f9:0xc56d17dbe420a67f",
+      ],
+      url: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x881614ce7c13acbb:0x5c7b18bbf6ec4f7e?authuser=-1&hl=en&gl=us",
+    },
+  ],
+};
